@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atualização</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="shortcut icon" href="./homer.png" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #f7db15, #f71568, #e42692, #ad2bad, #2f2bad);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      color: #25bff8;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 0 25px #8a61e9(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      background: linear-gradient(to right, #ad2bad, #f71568);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    label {
+      color: #7c4cec;
+      font-weight: bold;
+    }
+
+    .form-control {
+      border-color: #7c4cec;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(179, 153, 238, 0.25);
+    }
+
+    .btn-warning {
+      background-color: #ff87b2;
+      border-color: #ff87b2;
+      color: #fff;
+    }
+
+    .btn-warning:hover {
+      background-color: #ff87b2;
+      border-color: #ff87b2;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="mb-4">Atualização</h2>
+    <form>
+      <div class="mb-3">
+        <label for="txtNome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="txtNome">
+      </div>
+      <div class="mb-3">
+        <label for="txtLogin" class="form-label">Login:</label>
+        <input type="text" class="form-control" id="txtLogin">
+      </div>
+      <div class="mb-3">
+        <label for="txtSenha" class="form-label">Senha:</label>
+        <input type="password" class="form-control" id="txtSenha">
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Atualizar</button>
+    </form>
+  </div>
+
+  <script src="./atualizacao.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
